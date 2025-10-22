@@ -18,6 +18,7 @@ export default function HomePage() {
             <a href="#services" className="text-gray-700 hover:text-indigo-700">Services</a>
             <a href="#why" className="text-gray-700 hover:text-indigo-700">Why Us</a>
             <a href="#contact" className="text-gray-700 hover:text-indigo-700">Contact</a>
+            <a href="/privacy" className="text-gray-700 hover:text-indigo-700">Privacy</a>
           </nav>
           <button
             className="md:hidden text-gray-700 hover:text-indigo-700 focus:outline-none"
@@ -32,6 +33,7 @@ export default function HomePage() {
             <a href="#services" className="block text-gray-700 hover:text-indigo-700 font-medium">Services</a>
             <a href="#why" className="block text-gray-700 hover:text-indigo-700 font-medium">Why Us</a>
             <a href="#contact" className="block text-gray-700 hover:text-indigo-700 font-medium">Contact</a>
+            <a href="/privacy" className="block text-gray-700 hover:text-indigo-700 font-medium">Privacy</a>
           </div>
         )}
       </header>
