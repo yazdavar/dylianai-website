@@ -96,8 +96,13 @@ export default function HomePage() {
       </section>
 
       {/* Footer */}
-      <footer className="text-center py-6 text-sm text-gray-500">
-        © 2025 DylianAI. All rights reserved.
+      <footer className="text-center py-6 text-sm text-gray-500 space-y-2">
+        <p>© 2025 DylianAI. All rights reserved.</p>
+        <div className="space-x-4">
+          <a href="/privacy" className="text-indigo-700 hover:underline">Privacy Policy</a>
+          <span>•</span>
+          <a href="/terms" className="text-indigo-700 hover:underline">Terms and Conditions</a>
+        </div>
       </footer>
     </main>
     </>
