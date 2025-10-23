@@ -31,8 +31,7 @@ export default function TermsAndConditions() {
             <p className="text-lg">
               Welcome to DylianAI. By accessing or using our website, services, or products
               (collectively, the "Services"), you agree to be bound by these Terms and Conditions
-              ("Terms"). Please read them carefully. If you do not agree with these Terms, you may
-              not use our Services.
+              ("Terms"). Please read them carefully.
             </p>
           </section>
 
