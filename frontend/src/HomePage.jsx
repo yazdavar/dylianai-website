@@ -18,7 +18,7 @@ export default function HomePage() {
             <a href="#services" className="text-gray-700 hover:text-indigo-700">Services</a>
             <a href="#why" className="text-gray-700 hover:text-indigo-700">Why Us</a>
             <a href="#contact" className="text-gray-700 hover:text-indigo-700">Contact</a>
-            <a href="/privacy" className="text-gray-700 hover:text-indigo-700">Privacy</a>
+            <a href="/privacy-policy.html" className="text-gray-700 hover:text-indigo-700">Privacy</a>
           </nav>
           <button
             className="md:hidden text-gray-700 hover:text-indigo-700 focus:outline-none"
@@ -33,7 +33,7 @@ export default function HomePage() {
             <a href="#services" className="block text-gray-700 hover:text-indigo-700 font-medium">Services</a>
             <a href="#why" className="block text-gray-700 hover:text-indigo-700 font-medium">Why Us</a>
             <a href="#contact" className="block text-gray-700 hover:text-indigo-700 font-medium">Contact</a>
-            <a href="/privacy" className="block text-gray-700 hover:text-indigo-700 font-medium">Privacy</a>
+            <a href="/privacy-policy.html" className="block text-gray-700 hover:text-indigo-700 font-medium">Privacy</a>
           </div>
         )}
       </header>
@@ -99,7 +99,7 @@ export default function HomePage() {
       <footer className="text-center py-6 text-sm text-gray-500 space-y-2">
         <p>© 2025 DylianAI. All rights reserved.</p>
         <div className="space-x-4">
-          <a href="/privacy" className="text-indigo-700 hover:underline">Privacy Policy</a>
+          <a href="/privacy-policy.html" className="text-indigo-700 hover:underline">Privacy Policy</a>
           <span>•</span>
           <a href="/terms" className="text-indigo-700 hover:underline">Terms and Conditions</a>
         </div>
