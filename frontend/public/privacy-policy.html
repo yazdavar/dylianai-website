@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - DylianAI</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+      color: #111827;
+      background-color: #ffffff;
+      line-height: 1.6;
+    }
+    
+    /* Header Styles */
+    header {
+      background-color: #ffffff;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 50;
+    }
+    
+    .header-container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    
+    .logo-container img {
+      height: 2rem;
+      width: auto;
+    }
+    
+    .logo-text {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #4338ca;
+    }
+    
+    nav {
+      display: flex;
+      gap: 1.5rem;
+    }
+    
+    nav a {
+      color: #374151;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    
+    nav a:hover {
+      color: #4338ca;
+    }
+    
+    nav a.active {
+      color: #4338ca;
+      font-weight: 600;
+    }
+    
+    .mobile-menu-btn {
+      display: none;
+      font-size: 1.5rem;
+      background: none;
+      border: none;
+      color: #374151;
+      cursor: pointer;
+    }
+    
+    .mobile-menu-btn:hover {
+      color: #4338ca;
+    }
+    
+    .mobile-menu {
+      display: none;
+      background-color: #ffffff;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+      padding: 1.5rem;
+      gap: 1rem;
+      border-radius: 0 0 0.5rem 0.5rem;
+    }
+    
+    .mobile-menu.show {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .mobile-menu a {
+      color: #374151;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    
+    .mobile-menu a:hover {
+      color: #4338ca;
+    }
+    
+    .mobile-menu a.active {
+      color: #4338ca;
+      font-weight: 600;
+    }
+    
+    @media (max-width: 768px) {
+      nav {
+        display: none;
+      }
+      
+      .mobile-menu-btn {
+        display: block;
+      }
+    }
+    
+    /* Main Content */
+    main {
+      background-color: #ffffff;
+      width: 100%;
+      padding-top: 5rem;
+    }
+    
+    /* Hero Section */
+    .hero {
+      padding: 5rem 1.5rem;
+      text-align: center;
+      background: linear-gradient(to bottom right, #4f46e5, #1d4ed8);
+      color: white;
+    }
+    
+    .hero h1 {
+      font-size: 2.25rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+    
+    .hero p {
+      font-size: 1.25rem;
+    }
+    
+    /* Content Section */
+    .content-section {
+      padding: 5rem 1.5rem;
+    }
+    
+    .content-wrapper {
+      max-width: 896px;
+      margin: 0 auto;
+    }
+    
+    .content-box {
+      background-color: #ffffff;
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+      border-radius: 0.5rem;
+      padding: 2rem;
+    }
+    
+    .last-updated {
+      color: #4b5563;
+      margin-bottom: 1rem;
+    }
+    
+    .intro-text {
+      color: #374151;
+      line-height: 1.75;
+    }
+    
+    .table-of-contents {
+      background-color: #f9fafb;
+      padding: 1.5rem;
+      border-radius: 0.5rem;
+      margin-top: 2rem;
+    }
+    
+    .table-of-contents h3 {
+      font-size: 1.125rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: #1f2937;
+    }
+    
+    .table-of-contents ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    
+    .table-of-contents a {
+      color: #4f46e5;
+      text-decoration: underline;
+    }
+    
+    .table-of-contents a:hover {
+      color: #3730a3;
+    }
+    
+    .policy-section {
+      margin-top: 2rem;
+    }
+    
+    .policy-section h2 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      color: #4338ca;
+    }
+    
+    .policy-section h2 a {
+      color: inherit;
+      text-decoration: none;
+    }
+    
+    .policy-section h2 a:hover {
+      color: #3730a3;
+    }
+    
+    .policy-section h3 {
+      font-size: 1.125rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: #1f2937;
+    }
+    
+    .policy-section p {
+      color: #374151;
+      line-height: 1.75;
+      margin-bottom: 1rem;
+    }
+    
+    .policy-section ul {
+      list-style: disc;
+      padding-left: 1.5rem;
+      color: #374151;
+    }
+    
+    .policy-section li {
+      margin-bottom: 0.25rem;
+    }
+    
+    .blue-box {
+      background-color: #eff6ff;
+      padding: 1.5rem;
+      border-radius: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    .contact-box {
+      margin-top: 1rem;
+      padding: 1rem;
+      background-color: #f9fafb;
+      border-radius: 0.5rem;
+    }
+    
+    .contact-box p {
+      color: #1f2937;
+      margin-bottom: 0.5rem;
+    }
+    
+    strong {
+      color: #1f2937;
+    }
+    
+    a {
+      color: #4f46e5;
+      text-decoration: underline;
+    }
+    
+    a:hover {
+      color: #3730a3;
+    }
+    
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 1.5rem 0;
+      font-size: 0.875rem;
+      color: #6b7280;
+    }
+    
+    /* Spacing */
+    .space-y-8 > * + * {
+      margin-top: 2rem;
+    }
+    
+    .space-y-6 > * + * {
+      margin-top: 1.5rem;
+    }
+    
+    .space-y-4 > * + * {
+      margin-top: 1rem;
+    }
+    
+    .space-y-1 > * + * {
+      margin-top: 0.25rem;
+    }
+    
+    .mb-4 {
+      margin-bottom: 1rem;
+    }
+    
+    .mb-6 {
+      margin-bottom: 1.5rem;
+    }
+    
+    .mt-4 {
+      margin-top: 1rem;
+    }
+    
+    .mt-2 {
+      margin-top: 0.5rem;
+    }
+  </style>
+  <script>
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobileMenu');
+      menu.classList.toggle('show');
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo-container">
+        <img src="/vite.svg" alt="DylianAI Logo">
+        <span class="logo-text">DylianAI</span>
+      </div>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/#services">Services</a>
+        <a href="/#why">Why Us</a>
+        <a href="/#contact">Contact</a>
+        <a href="/privacy" class="active">Privacy</a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+        ☰
+      </button>
+    </div>
+    <div id="mobileMenu" class="mobile-menu">
+      <a href="/">Home</a>
+      <a href="/#services">Services</a>
+      <a href="/#why">Why Us</a>
+      <a href="/#contact">Contact</a>
+      <a href="/privacy" class="active">Privacy</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1>Privacy Policy</h1>
+      <p>DylianAI SMS Consent Policy</p>
+    </section>
+
+    <!-- Privacy Policy Content -->
+    <section class="content-section">
+      <div class="content-wrapper">
+        <div class="content-box">
+          <div class="mb-4">
+            <p class="last-updated">Last updated: <span id="lastUpdated"></span></p>
+            <p class="intro-text">
+              This Privacy Policy describes how DylianAI ("we," "our," or "us") collects, uses, and shares your personal information when you visit our website or use our services.
+            </p>
+          </div>
+
+          <div class="space-y-8">
+            <!-- Table of Contents -->
+            <div class="table-of-contents">
+              <h3>Table of Contents</h3>
+              <ul>
+                <li><a href="#information-collection">1. Information We Collect</a></li>
+                <li><a href="#information-use">2. How We Use Your Information</a></li>
+                <li><a href="#information-sharing">3. Information Sharing</a></li>
+                <li><a href="#data-security">4. Data Security</a></li>
+                <li><a href="#cookies">5. Cookies and Tracking</a></li>
+                <li><a href="#your-rights">6. Your Rights</a></li>
+                <li><a href="#sms-policy">7. SMS Communications Policy</a></li>
+                <li><a href="#policy-changes">8. Changes to This Policy</a></li>
+                <li><a href="#contact">9. Contact Us</a></li>
+              </ul>
+            </div>
+
+            <!-- Section 1: Information Collection -->
+            <div class="policy-section" id="information-collection">
+              <h2>
+                <a href="#information-collection">1. Information We Collect</a>
+              </h2>
+              <div>
+                <h3>Personal Information</h3>
+                <p>
+                  We may collect personal information that you provide directly to us, including:
+                </p>
+                <ul class="mt-2 space-y-1">
+                  <li>Name and contact information (email address, phone number)</li>
+                  <li>Business information and professional details</li>
+                  <li>Communication preferences</li>
+                  <li>Any other information you choose to provide</li>
+                </ul>
+              </div>
+              <div>
+                <h3>Automatically Collected Information</h3>
+                <p>
+                  We automatically collect certain information when you visit our website, including:
+                </p>
+                <ul class="mt-2 space-y-1">
+                  <li>IP address and device information</li>
+                  <li>Browser type and version</li>
+                  <li>Pages visited and time spent on our site</li>
+                  <li>Referring website information</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Section 2: Information Use -->
+            <div class="policy-section" id="information-use">
+              <h2>
+                <a href="#information-use">2. How We Use Your Information</a>
+              </h2>
+              <p>
+                We use the information we collect to:
+              </p>
+              <ul class="space-y-1">
+                <li>Provide and improve our AI analytics and marketing services</li>
+                <li>Communicate with you about our services and respond to inquiries</li>
+                <li>Send appointment reminders and service-related notifications</li>
+                <li>Analyze website usage and optimize user experience</li>
+                <li>Comply with legal obligations and protect our rights</li>
+              </ul>
+            </div>
+
+            <!-- Section 3: Information Sharing -->
+            <div class="policy-section" id="information-sharing">
+              <h2>
+                <a href="#information-sharing">3. Information Sharing</a>
+              </h2>
+              <p>
+                We do not sell, trade, or rent your personal information to third parties. We may share your information only in the following circumstances:
+              </p>
+              <ul class="space-y-1">
+                <li>With your explicit consent</li>
+                <li>To comply with legal requirements or court orders</li>
+                <li>To protect our rights, property, or safety</li>
+                <li>With trusted service providers who assist in our operations (under strict confidentiality agreements)</li>
+              </ul>
+            </div>
+
+            <!-- Section 4: Data Security -->
+            <div class="policy-section" id="data-security">
+              <h2>
+                <a href="#data-security">4. Data Security</a>
+              </h2>
+              <p>
+                We implement appropriate technical and organizational measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. However, no method of transmission over the internet or electronic storage is 100% secure.
+              </p>
+            </div>
+
+            <!-- Section 5: Cookies -->
+            <div class="policy-section" id="cookies">
+              <h2>
+                <a href="#cookies">5. Cookies and Tracking</a>
+              </h2>
+              <p>
+                We use cookies and similar tracking technologies to enhance your browsing experience, analyze site traffic, and understand user preferences. You can control cookie settings through your browser preferences.
+              </p>
+            </div>
+
+            <!-- Section 6: Your Rights -->
+            <div class="policy-section" id="your-rights">
+              <h2>
+                <a href="#your-rights">6. Your Rights</a>
+              </h2>
+              <p>
+                You have the right to:
+              </p>
+              <ul class="space-y-1">
+                <li>Access and update your personal information</li>
+                <li>Request deletion of your personal information</li>
+                <li>Opt out of marketing communications</li>
+                <li>Request a copy of your data</li>
+                <li>Withdraw consent at any time</li>
+              </ul>
+            </div>
+
+            <!-- Section 7: SMS Policy -->
+            <div class="policy-section" id="sms-policy">
+              <h2>
+                <a href="#sms-policy">7. SMS Communications Policy</a>
+              </h2>
+              
+              <div class="blue-box">
+                <h3>DylianAI SMS Consent Policy (Opt-In Statement)</h3>
+                <p><strong>Business Name:</strong> DylianAI</p>
+                <p><strong>Purpose:</strong> Appointment reminders, confirmations, and follow-up notifications</p>
+              </div>
+
+              <div class="space-y-6">
+                <div>
+                  <h3>SMS Consent Notice</h3>
+                  <p>
+                    By entering your phone number or booking an appointment through DylianAI (or one of our
+                    partner offices), you agree to receive text messages related to your appointments and customer
+                    service updates. These messages may include appointment confirmations and reminders,
+                    rescheduling or cancellation notices, and follow-up instructions and customer-care responses.
+                    Message frequency may vary. Message and data rates may apply. You can reply <strong>STOP</strong> at any
+                    time to opt out or <strong>HELP</strong> for assistance.
+                  </p>
+                </div>
+
+                <div>
+                  <h3>How We Collect Consent</h3>
+                  <p>
+                    Customers provide consent by entering their phone number into an online booking or intake form,
+                    or providing verbal or written consent when contacting the business directly. All messages are
+                    sent only to customers with a prior relationship or explicit opt-in.
+                  </p>
+                </div>
+
+                <div>
+                  <h3>Privacy Commitment</h3>
+                  <p>
+                    We never sell or share your phone number. Data is stored securely and used only for
+                    communication relevant to your requested services. For more details, visit
+                    <a href="https://dylianai.com/privacy" target="_blank" rel="noreferrer">https://dylianai.com/privacy</a>.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Section 8: Policy Changes -->
+            <div class="policy-section" id="policy-changes">
+              <h2>
+                <a href="#policy-changes">8. Changes to This Policy</a>
+              </h2>
+              <p>
+                We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last updated" date. Your continued use of our services after any modifications constitutes acceptance of the updated policy.
+              </p>
+            </div>
+
+            <!-- Section 9: Contact -->
+            <div class="policy-section" id="contact">
+              <h2>
+                <a href="#contact">9. Contact Us</a>
+              </h2>
+              <p>
+                If you have any questions about this Privacy Policy or our data practices, please contact us at:
+              </p>
+              <div class="contact-box">
+                <p><strong>Email:</strong> info@dylianai.com</p>
+                <p><strong>Website:</strong> https://dylianai.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      © 2025 DylianAI. All rights reserved.
+    </footer>
+  </main>
+
+  <script>
+    // Set last updated date
+    document.getElementById('lastUpdated').textContent = new Date().toLocaleDateString();
+  </script>
+</body>
+</html>
+
