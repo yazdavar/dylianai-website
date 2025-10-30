@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import logo from './assets/dylianai-logo.png';
 import illustration from './assets/undraw_artificial-intelligence_fuvd.svg';
 
@@ -18,7 +19,7 @@ export default function HomePage() {
             <a href="#services" className="text-gray-700 hover:text-indigo-700">Services</a>
             <a href="#why" className="text-gray-700 hover:text-indigo-700">Why Us</a>
             <a href="#contact" className="text-gray-700 hover:text-indigo-700">Contact</a>
-            <a href="/privacy-policy.html" className="text-gray-700 hover:text-indigo-700">Privacy</a>
+            <Link to="/privacy-policy" className="text-gray-700 hover:text-indigo-700">Privacy</Link>
           </nav>
           <button
             className="md:hidden text-gray-700 hover:text-indigo-700 focus:outline-none"
@@ -33,7 +34,7 @@ export default function HomePage() {
             <a href="#services" className="block text-gray-700 hover:text-indigo-700 font-medium">Services</a>
             <a href="#why" className="block text-gray-700 hover:text-indigo-700 font-medium">Why Us</a>
             <a href="#contact" className="block text-gray-700 hover:text-indigo-700 font-medium">Contact</a>
-            <a href="/privacy-policy.html" className="block text-gray-700 hover:text-indigo-700 font-medium">Privacy</a>
+            <Link to="/privacy-policy" className="block text-gray-700 hover:text-indigo-700 font-medium">Privacy</Link>
           </div>
         )}
       </header>
@@ -99,7 +100,9 @@ export default function HomePage() {
       <footer className="text-center py-6 text-sm text-gray-500 space-y-2">
         <p>© 2025 DylianAI. All rights reserved.</p>
         <div className="space-x-4">
-          <a href="/privacy-policy.html" className="text-indigo-700 hover:underline">Privacy Policy</a>
+          <Link to="/privacy-policy" className="text-indigo-700 hover:underline">Privacy Policy</Link>
+          <span>•</span>
+          <Link to="/sms-opt-in-policy" className="text-indigo-700 hover:underline">SMS Opt-In Policy</Link>
           <span>•</span>
           <a href="/terms" className="text-indigo-700 hover:underline">Terms and Conditions</a>
         </div>
