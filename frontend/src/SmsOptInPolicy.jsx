@@ -176,7 +176,7 @@ export default function SmsOptInPolicy() {
                     <strong>DylianAI Compliance Department</strong>
                   </p>
                   <p className="text-gray-700">
-                    <strong>Email:</strong> <a href="mailto:info@dylianai.com" className="text-indigo-600 hover:text-indigo-800 underline">info@dylianai.com</a>
+                    <strong>Email:</strong> <a href="mailto:contact@dylianai.com" className="text-indigo-600 hover:text-indigo-800 underline">contact@dylianai.com</a>
                   </p>
                 </div>
               </div>
