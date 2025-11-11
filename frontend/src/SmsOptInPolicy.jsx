@@ -42,6 +42,15 @@ export default function SmsOptInPolicy() {
         <section className="py-20 px-6 text-center bg-gradient-to-br from-indigo-600 to-blue-700 text-white">
           <h1 className="text-4xl font-bold mb-4">SMS Opt-In Policy</h1>
           <p className="text-xl">How we collect and use SMS consent</p>
+          <div className="mt-6">
+            <a 
+              href="/DylianAI_SMS_Consent_Collection_Policy.docx" 
+              download="DylianAI_SMS_Consent_Collection_Policy.docx"
+              className="inline-block bg-white text-indigo-700 font-semibold py-3 px-6 rounded-full shadow hover:bg-gray-100 transition-colors"
+            >
+              📄 Download Policy Document (Word)
+            </a>
+          </div>
         </section>
 
         <section className="py-20 px-6">

@@ -1,0 +1,8 @@
+{
+	"name": "Dylian AI Website",
+	"image": "mcr.microsoft.com/devcontainers/javascript-node:1-20",
+	"workspaceFolder": "/workspace",
+	"workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
+	"postCreateCommand": "cd frontend && npm install"
+}
+
