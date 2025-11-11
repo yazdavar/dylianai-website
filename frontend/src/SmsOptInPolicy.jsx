@@ -73,29 +73,84 @@ export default function SmsOptInPolicy() {
               </div>
 
               <div>
-                <h2 className="text-2xl font-bold mb-4 text-indigo-700">2. Consent to Receive SMS Messages</h2>
-                <p className="text-gray-700 leading-relaxed mb-4">
-                  When you provide your mobile number and opt-in to receive SMS messages, you are consenting to receive appointment-related messages from the business you have a relationship with (such as your dentist, doctor, or service provider). These messages are delivered through DylianAI's communication platform on behalf of that business and will only include appointment scheduling, reminders, confirmations, and related scheduling information.
+                <h2 className="text-2xl font-bold mb-4 text-indigo-700">2. Consent Processes</h2>
+                <p className="text-gray-700 leading-relaxed mb-6">
+                  DylianAI uses two distinct consent processes depending on whether you are a business provider using our platform or a consumer receiving messages from a provider. These processes are described below.
                 </p>
+
+                <div className="bg-indigo-50 p-6 rounded-lg mb-6">
+                  <h3 className="text-xl font-semibold mb-4 text-indigo-800">2.1 Provider Consent (Businesses Using DylianAI)</h3>
+                  <p className="text-gray-700 leading-relaxed mb-4">
+                    Businesses (such as medical practices, dental offices, and other service providers) that subscribe to DylianAI's platform must provide consent to receive administrative and service-related messages from DylianAI. This consent is obtained through a web-based consent form.
+                  </p>
+                  <p className="text-gray-700 leading-relaxed mb-4">
+                    <strong>Consent Method:</strong> Providers consent to receive messages from DylianAI by completing an online consent form accessible through a web link provided during the account setup or subscription process.
+                  </p>
+                  <p className="text-gray-700 leading-relaxed mb-4">
+                    <strong>Message Types:</strong> Providers may receive:
+                  </p>
+                  <ul className="list-disc list-inside space-y-2 text-gray-700 mb-4 ml-4">
+                    <li>Account setup and configuration notifications</li>
+                    <li>Platform updates and service announcements</li>
+                    <li>Billing and subscription-related communications</li>
+                    <li>Technical support and system notifications</li>
+                    <li>Compliance and policy updates</li>
+                  </ul>
+                  <p className="text-gray-700 leading-relaxed">
+                    <strong>Opt-Out:</strong> Providers may opt-out of receiving administrative messages from DylianAI at any time by updating their account preferences or contacting DylianAI support. Note that opting out of administrative messages may impact the provider's ability to receive important account and service updates.
+                  </p>
+                </div>
+
+                <div className="bg-blue-50 p-6 rounded-lg mb-6">
+                  <h3 className="text-xl font-semibold mb-4 text-blue-800">2.2 Consumer Consent (Patients/Customers Receiving Messages from Providers)</h3>
+                  <p className="text-gray-700 leading-relaxed mb-4">
+                    Consumers (patients, customers, or clients) receive appointment-related messages from their service providers through DylianAI's platform. Consent is obtained via SMS text message.
+                  </p>
+                  <p className="text-gray-700 leading-relaxed mb-4">
+                    <strong>Consent Method:</strong> When a provider initiates communication with a consumer through DylianAI's platform, the consumer will receive an initial consent message via SMS. The consumer must reply to this message to provide consent.
+                  </p>
+                  <p className="text-gray-700 leading-relaxed mb-4">
+                    <strong>Initial Consent Message:</strong> Consumers will receive the following message:
+                  </p>
+                  <div className="bg-white p-4 rounded-lg border-2 border-blue-300 mb-4">
+                    <p className="text-gray-800 font-mono text-sm leading-relaxed">
+                      "Hi this is DylianAI contacting you on behalf of your provider to provide you updates about your appointments. To continue receiving messages reply CONTINUE. You may opt-out at any time by replying STOP."
+                    </p>
+                  </div>
+                  <p className="text-gray-700 leading-relaxed mb-4">
+                    <strong>How to Consent:</strong> To consent to receive appointment-related messages, the consumer must reply with "CONTINUE" to the initial consent message. If the consumer does not reply or replies with any other text, they will not receive further messages.
+                  </p>
+                  <p className="text-gray-700 leading-relaxed mb-4">
+                    <strong>Message Types:</strong> After providing consent, consumers will receive:
+                  </p>
+                  <ul className="list-disc list-inside space-y-2 text-gray-700 mb-4 ml-4">
+                    <li>Appointment reminders</li>
+                    <li>Appointment confirmations</li>
+                    <li>Appointment cancellation notices</li>
+                    <li>Appointment rescheduling notices</li>
+                    <li>Scheduling-related information (time, date, location)</li>
+                  </ul>
+                  <p className="text-gray-700 leading-relaxed mb-4">
+                    <strong>Important:</strong> This consent is not a condition of receiving services from the provider. Consumers may receive services without providing consent to receive SMS messages.
+                  </p>
+                  <p className="text-gray-700 leading-relaxed">
+                    <strong>Opt-Out:</strong> Consumers may opt-out at any time by replying "STOP" to any message. Upon opting out, they will receive a confirmation message and no further messages will be sent unless they re-initiate contact and provide consent again.
+                  </p>
+                </div>
+              </div>
+
+              <div>
+                <h2 className="text-2xl font-bold mb-4 text-indigo-700">3. General Consent Information</h2>
                 <p className="text-gray-700 leading-relaxed mb-4">
-                  <strong>This consent is not a condition of purchasing any goods or services from the business.</strong> You may receive services from the business without providing consent to receive SMS messages.
+                  All consent provided through DylianAI's platform is voluntary and may be withdrawn at any time. Consent is specific to the relationship between the provider and consumer, and opting out from one provider does not affect communications with other providers that may use DylianAI's platform.
                 </p>
-                <p className="text-gray-700 leading-relaxed mb-4">
-                  You may opt-in to receive SMS messages from a business using DylianAI's platform through one of the following methods:
-                </p>
-                <ul className="list-disc list-inside space-y-2 text-gray-700 mb-4 ml-4">
-                  <li>Checking a box on a form or online portal at the business's location explicitly indicating your consent to receive SMS messages</li>
-                  <li>Replying "YES" or "JOIN" to a text message invitation sent by the business</li>
-                  <li>Sending a specific keyword to a designated short code or phone number provided by the business</li>
-                  <li>Providing explicit verbal or written consent to the business's representative (e.g., during check-in at a medical appointment)</li>
-                </ul>
                 <p className="text-gray-700 leading-relaxed">
-                  Consent is voluntary and may be withdrawn at any time as described in Section 3 below. Your consent applies to SMS communications from the specific business you opted in with, delivered via DylianAI's platform.
+                  For detailed information about opting out, please see Section 4 below.
                 </p>
               </div>
 
               <div>
-                <h2 className="text-2xl font-bold mb-4 text-indigo-700">3. Opt-Out</h2>
+                <h2 className="text-2xl font-bold mb-4 text-indigo-700">4. Opt-Out</h2>
                 <p className="text-gray-700 leading-relaxed mb-4">
                   You can opt-out of receiving SMS messages from a business using DylianAI's platform at any time by replying "STOP" to any message you receive from that business.
                 </p>
@@ -110,7 +165,7 @@ export default function SmsOptInPolicy() {
               </div>
 
               <div>
-                <h2 className="text-2xl font-bold mb-4 text-indigo-700">4. Message Content and Frequency</h2>
+                <h2 className="text-2xl font-bold mb-4 text-indigo-700">5. Message Content and Frequency</h2>
                 <p className="text-gray-700 leading-relaxed mb-4">
                   DylianAI's platform is used exclusively for appointment scheduling communications. Messages sent through DylianAI's platform are limited to:
                 </p>
@@ -136,14 +191,14 @@ export default function SmsOptInPolicy() {
               </div>
 
               <div>
-                <h2 className="text-2xl font-bold mb-4 text-indigo-700">5. Message and Data Rates</h2>
+                <h2 className="text-2xl font-bold mb-4 text-indigo-700">6. Message and Data Rates</h2>
                 <p className="text-gray-700 leading-relaxed">
                   Standard message and data rates may apply to SMS messages sent by businesses through DylianAI's platform. Please consult your mobile service provider for details about your messaging plan and any applicable charges.
                 </p>
               </div>
 
               <div>
-                <h2 className="text-2xl font-bold mb-4 text-indigo-700">6. Privacy</h2>
+                <h2 className="text-2xl font-bold mb-4 text-indigo-700">7. Privacy</h2>
                 <p className="text-gray-700 leading-relaxed mb-4">
                   Your privacy is important to us. As a communication platform provider, DylianAI facilitates messaging between you and the businesses you have relationships with. Your contact information and message content are shared with the business you are communicating with, as necessary to facilitate your requested communications.
                 </p>
@@ -160,14 +215,14 @@ export default function SmsOptInPolicy() {
               </div>
 
               <div>
-                <h2 className="text-2xl font-bold mb-4 text-indigo-700">7. Changes to This Policy</h2>
+                <h2 className="text-2xl font-bold mb-4 text-indigo-700">8. Changes to This Policy</h2>
                 <p className="text-gray-700 leading-relaxed">
                   We may update this SMS Opt-In Policy from time to time. Any changes will be posted on this page with an updated effective date. Your continued use of SMS messaging services after such changes constitutes acceptance of the updated policy.
                 </p>
               </div>
 
               <div>
-                <h2 className="text-2xl font-bold mb-4 text-indigo-700">8. Contact Us</h2>
+                <h2 className="text-2xl font-bold mb-4 text-indigo-700">9. Contact Us</h2>
                 <p className="text-gray-700 leading-relaxed mb-4">
                   If you have any questions or concerns about this SMS Opt-In Policy or our messaging practices, please contact us:
                 </p>
