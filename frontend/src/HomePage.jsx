@@ -110,8 +110,14 @@ export default function HomePage() {
         <div className="space-x-4">
           <Link to="/privacy-policy" className="text-indigo-700 hover:underline">Privacy Policy</Link>
           <span>•</span>
-          {/* <Link to="/sms-opt-in-policy" className="text-indigo-700 hover:underline">SMS Opt-In Policy</Link>
-          <span>•</span> */}
+          <a 
+              href="/DylianAI_SMS_Consent_Collection_Policy.docx" 
+              download="DylianAI_SMS_Consent_Collection_Policy.docx"
+              className="inline-block bg-white text-indigo-700 font-semibold py-3 px-6 rounded-full shadow hover:bg-gray-100 transition-colors"
+            >
+              📄 Download SMS Opt-In Policy Document (Word)
+            </a>
+          <span>•</span>
           <a href="/terms" className="text-indigo-700 hover:underline">Terms and Conditions</a>
         </div>
       </footer>

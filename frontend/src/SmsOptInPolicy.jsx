@@ -48,7 +48,7 @@ export default function SmsOptInPolicy() {
               download="DylianAI_SMS_Consent_Collection_Policy.docx"
               className="inline-block bg-white text-indigo-700 font-semibold py-3 px-6 rounded-full shadow hover:bg-gray-100 transition-colors"
             >
-              📄 Download Policy Document (Word)
+              📄 Download SMS Opt-In Policy Document (Word)
             </a>
           </div>
         </section>
