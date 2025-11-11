@@ -93,7 +93,15 @@ export default function HomePage() {
         <p className="max-w-xl mx-auto text-lg mb-4">
           Ready to transform your analytics and marketing with AI? Reach out to us to learn more.
         </p>
-        <p className="text-indigo-700 text-xl font-semibold">info@dylianai.com</p>
+        <p className="text-indigo-700 text-xl font-semibold mb-6">info@dylianai.com</p>
+        <div className="mt-6">
+          <Link
+            to="/sms-opt-in"
+            className="inline-block bg-indigo-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-indigo-700 transition-colors"
+          >
+            Sign Up for SMS Notifications
+          </Link>
+        </div>
       </section>
 
       {/* Footer */}
