@@ -177,12 +177,12 @@ export default function SmsOptInConsent() {
                       Return to Home
                     </Link>
                     <div>
-                      <Link
+                      {/* <Link
                         to="/sms-opt-in-policy"
                         className="text-indigo-600 hover:text-indigo-800 underline text-sm"
                       >
                         View SMS Opt-In Policy
-                      </Link>
+                      </Link> */}
                     </div>
                   </div>
                 </div>
@@ -334,9 +334,9 @@ export default function SmsOptInConsent() {
                     Privacy Policy
                   </Link>
                   {' '}and{' '}
-                  <Link to="/sms-opt-in-policy" className="text-indigo-600 hover:text-indigo-800 underline">
+                  {/* <Link to="/sms-opt-in-policy" className="text-indigo-600 hover:text-indigo-800 underline">
                     SMS Opt-In Policy
-                  </Link>
+                  </Link> */}
                   .
                 </p>
               </div>

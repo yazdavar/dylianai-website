@@ -15,8 +15,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/" element={<HomePage />} />
         <Route path="/terms" element={<TermsAndConditions />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-        <Route path="/sms-opt-in-policy" element={<SmsOptInPolicy />} />
-        <Route path="/sms-opt-in" element={<SmsOptInConsent />} />
+        {/* <Route path="/sms-opt-in-policy" element={<SmsOptInPolicy />} /> */}
+        {/* <Route path="/sms-opt-in" element={<SmsOptInConsent />} /> */}
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
